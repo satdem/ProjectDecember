@@ -17,12 +17,12 @@ Feature: User Story 14
     Then  the input should be updated
 
 
-  Scenario: User story 06, Test Case 04, When searching by name,the results should be matched the search terms
+  Scenario: User story 14, Test Case 04, When searching by name,the results should be matched the search terms
 
     When user search  dismissal articles name as "deneme"
 
 
-  Scenario: User story 06, Test Case 03, User should be able to delete Dismissal Articles Page
+  Scenario: User story 14, Test Case 05, User should be able to delete Dismissal Articles Page
 
     When  user delete the  dismissal articles name as "deneme"
     Then  the input should be deleted
