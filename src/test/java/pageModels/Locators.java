@@ -51,11 +51,17 @@ public interface Locators {
     By HumainResources = By.xpath("//span[text()='Human Resources']");
     By DismissalArticles = By.xpath("//span[text()='Dismissal Articles']");
 
-    // Notation Locaters     By NotationInputName = By.cssSelector("input[name='name']");
-       By NotationInputShortName = By.cssSelector("input[name='shortName']");
-       By NotationInputMultiplier = By.cssSelector("input[name='multiplier']");
-       By DialogContainerButtonApply = By.cssSelector("mat-dialog-actions button");
+    // Notation Locaters
+    By NotationInputName = By.cssSelector("input[name='name']");
+    By NotationInputShortName = By.cssSelector("input[name='shortName']");
+    By NotationInputMultiplier = By.cssSelector("input[name='multiplier']");
+    By DialogContainerButtonApply = By.cssSelector("mat-dialog-actions button");
+
     // locations Locators
     By LocationsInputCapacity = By.cssSelector("ms-text-field[formcontrolname='capacity']>input");
     By LocationType =By.xpath("(//mat-select[@role='combobox'])[3]");
+    By PageSearchInputName = By.cssSelector("ms-text-field[placeholder='GENERAL.FIELD.NAME']>input");
+    By PageSearchInputName2 = By.cssSelector("input[data-placeholder='Name']");
+    By DialogSelectAccountCode = By.cssSelector("input[formcontrolname='code']");
+
 }

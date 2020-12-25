@@ -41,7 +41,7 @@ public class ElementClass {
     private WebElement element;
     private WebDriverWait wait;
     private By by;
-    private final String listOfOptions_css = "div[role='listbox'] mat-option>span";
+    private final By listOfOptions_css = By.cssSelector("div[role='listbox'] mat-option>span");
 
     /**
      * constructor with no parameter
@@ -309,7 +309,7 @@ public class ElementClass {
      */
     public void selectOptionWithText(String visibleText){
         $(by).click();
-        List<WebElement> list = $$(By.cssSelector(listOfOptions_css)).getElements();
+        List<WebElement> list = $$(listOfOptions_css).getElements();
         for (WebElement e : list){
             String text = e.getText();
             if (text.contains(visibleText)) {
@@ -325,7 +325,7 @@ public class ElementClass {
      */
     public void selectOptionWithIndex(int optionIndex){
         $(by).click();
-        List<WebElement> e = $$(By.cssSelector(listOfOptions_css)).getElements();
+        List<WebElement> e = $$(listOfOptions_css).getElements();
 
         if (optionIndex >= e.size())
             optionIndex = e.size()-1;
